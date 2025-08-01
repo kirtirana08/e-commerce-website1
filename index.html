@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FairStore - Men's & Women's Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#222222">
+
+    <div class="logo">FairStore</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div> <!-- Mobile menu icon -->
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Discover the Latest Collection</h1>
+      <p>Trendy & stylish clothing for everyone</p>
+    </section>
+
+    <section class="products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRkwcLVx12wX9At_03PxYmBH6s1bHzzdCDpqYvkNi_KaAFh8iEhVTN_0d1soeZr1G46WH40oDjPZL2pPAr0YXHa80h6LtN7bj5ESRTGJ1s" alt="Men Jacket">
+          <h3>Men's Jacket</h3>
+          <p>2400</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="dress1.jpeg" alt="Women Dress">
+          <h3>Women's Dress</h3>
+          <p>2000</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="men shirt.jpeg" alt="Men Shirt">
+          <h3>Men's Shirt</h3>
+          <p>1500</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="top.jpeg" alt="Women Top">
+          <h3>Women's Top</h3>
+          <p>2950</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+
+     <section class="products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRkwcLVx12wX9At_03PxYmBH6s1bHzzdCDpqYvkNi_KaAFh8iEhVTN_0d1soeZr1G46WH40oDjPZL2pPAr0YXHa80h6LtN7bj5ESRTGJ1s" alt="Men Jacket">
+          <h3>Men's Jacket</h3>
+          <p>2400</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="dress1.jpeg" alt="Women Dress">
+          <h3>Women's Dress</h3>
+          <p>2000</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="men shirt.jpeg" alt="Men Shirt">
+          <h3>Men's Shirt</h3>
+          <p>1500</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="top.jpeg" alt="Women Top">
+          <h3>Women's Top</h3>
+          <p>2950</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FairStore. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(registration => {
+      console.log('ServiceWorker registered: ', registration);
+    })
+    .catch(error => {
+      console.log('ServiceWorker registration failed: ', error);
+    });
+  });
+}
+</script>
+
+</body>
+</html>
